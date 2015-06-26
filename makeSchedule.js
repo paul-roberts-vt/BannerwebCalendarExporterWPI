@@ -123,7 +123,7 @@ if (document.getElementById("insertedbtn")!== null || document.URL.indexOf("pls/
 	document.getElementsByClassName('pagetitlediv')[0].children[0].children[0].children[0].children[0].children[0].innerHTML != "Student Detail Schedule: ") 
 	return;
 btn.type = "button";
-btn.value = "Click Download Schedule";
+btn.value = "Click to Download Schedule";
 btn.onclick = function(){window.makeSchedule()};
 btn.style.width = "100%";
 btn.style.height = "100px";
