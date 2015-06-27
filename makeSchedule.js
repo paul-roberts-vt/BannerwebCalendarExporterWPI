@@ -5,6 +5,7 @@ document.addEventListener('load', function(){
 	window.makeSchedule = function(){
 
 	var ddtable = document.getElementsByClassName("datadisplaytable");
+	var filename = "error";
 
 	if (ddtable.length <= 0) return;
 
@@ -19,6 +20,7 @@ document.addEventListener('load', function(){
 		var startTime;
 		var endTime;
 		var byDayStr;
+		
 
 		aTable = ddtable[i];
 
@@ -27,6 +29,13 @@ document.addEventListener('load', function(){
 		if (aTable.getAttribute("summary") == "This layout table is used to present the schedule course detail") {
 			//console.log("Class Found");
 			var className = aTable.children[0].innerHTML;
+			if (filename == "error"){
+				filename = aTable.children[1].children[0].children[1].innerHTML;
+				filename = filename.replace(" ", "_");
+				filename = filename + "_Calendar"
+				console.log(filename);
+			}
+
 			var nameParts = className.split(" - ");
 			var courseNum = nameParts[1] + " " + nameParts[2];
 			description = nameParts[0];
@@ -113,7 +122,7 @@ document.addEventListener('load', function(){
 		}
 	}
 
-	cal.download();
+	cal.download(filename);
 
 }
 
