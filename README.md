@@ -1,5 +1,6 @@
-# BannerwebCalendarExporterWPI
-Allows bannerweb users to export the detailed schedule to a file that can be added iCal or Google Calendar.
+# Bannerweb Calendar Exporter (WPI)
+Allows bannerweb users to export the detailed schedule to a file that can be added iCal or Google Calendar. 
+<p>Was designed for WPI's bannerweb system. Could probably be edited to work for other schools.</p>
 
 Run from the Detailed Schedule page. Simply press the large button.
 
