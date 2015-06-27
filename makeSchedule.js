@@ -33,7 +33,7 @@ document.addEventListener('load', function(){
 				filename = aTable.children[1].children[0].children[1].innerHTML;
 				filename = filename.replace(" ", "_");
 				filename = filename + "_Calendar"
-				console.log(filename);
+				//console.log(filename);
 			}
 
 			var nameParts = className.split(" - ");
@@ -56,7 +56,9 @@ document.addEventListener('load', function(){
 				location = classInfo.children[3].innerHTML;
 				var dateRangeBad = classInfo.children[4].innerHTML;
 				course = courseNum + " " + classInfo.children[5].innerHTML;
-				//description = description +" with " + classInfo.children[6].innerHTML.split("(")[0];
+				//description = description +" with " + classInfo.children[6].innerHTML.split(" (")[0];
+
+				//console.log(description);
 
 				var dates = dateRangeBad.split(" - ");
 				var startDay = dates[0];//new Date(dates[0]);
