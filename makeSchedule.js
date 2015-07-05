@@ -1,9 +1,9 @@
 //File by Paul Roberts
 //Based off of code by Evin Ugur
 
-document.addEventListener('load', function(){
-	window.makeSchedule = function(){
-
+window.makeSchedule = function(){
+	
+ 
 	var ddtable = document.getElementsByClassName("datadisplaytable");
 	var filename = "error";
 
@@ -128,18 +128,6 @@ document.addEventListener('load', function(){
 
 }
 
-var btn = document.createElement("input");
-btn.id = "insertedbtn";
-if (document.getElementById("insertedbtn")!== null || document.URL.indexOf("pls/prod/bwskfshd") === -1 ||
-	document.getElementsByClassName('pagetitlediv')[0].children[0].children[0].children[0].children[0].children[0].innerHTML != "Student Detail Schedule: ") 
-	return;
-btn.type = "button";
-btn.value = "Click to Download Schedule";
-btn.onclick = function(){window.makeSchedule()};
-btn.style.width = "100%";
-btn.style.height = "100px";
-document.body.insertBefore(btn, document.body.children[0]);
-btn.style.fontSize = "32pt";
-var anon = function() { btn.style.backgroundColor = "rgb(108, 0, 194)";window.setTimeout(anon, 500);}
-anon();
-} , true);
+window.makeSchedule();
+
+
