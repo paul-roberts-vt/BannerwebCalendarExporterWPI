@@ -38,7 +38,8 @@ window.makeSchedule = function(){
 
 			var nameParts = className.split(" - ");
 			var courseNum = nameParts[1] + " " + nameParts[2];
-			description = nameParts[0];
+			//description = nameParts[0];
+			description = "";
 
 
 		}
