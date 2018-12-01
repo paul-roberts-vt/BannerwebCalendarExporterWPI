@@ -11,3 +11,4 @@ Allows users of Banner Web to download an entire semester schedule as a .ics fil
 <p>To use: login to banner and then click Student Services & Financial Aid -> Registration -> Student Detail Schedule. Then press the large purple button on the top of the page.</p>
 <p><b>Note: On weirdly scheduled days using the schedule from another day of the week, please refer to that day.</b></p>
 Based off work by Evin Ugur and Paul Roberts.
+
